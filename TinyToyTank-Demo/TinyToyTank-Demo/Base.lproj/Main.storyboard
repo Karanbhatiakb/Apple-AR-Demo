@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--ARView-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" userLabel="ARView" customClass="ViewController" customModule="TinyToyTank_Demo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cqA-je-DW4">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <arView multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zAc-LM-aiN">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                            </arView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3xE-49-hXF">
+                                <rect key="frame" x="144" y="682" width="80" height="80"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="Ad8-A4-dTs"/>
+                                    <constraint firstAttribute="width" secondItem="3xE-49-hXF" secondAttribute="height" multiplier="1:1" id="dBZ-Du-r5f"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Button">
+                                    <attributedString key="attributedTitle"/>
+                                    <imageReference key="image" image="arrowshape.turn.up.left.fill" catalog="system" symbolScale="large"/>
+                                </state>
+                                <buttonConfiguration key="configuration" style="plain" title="">
+                                    <imageReference key="image" image="arrowshape.turn.up.left.fill" catalog="system" symbolScale="large"/>
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="actionTurretLeft:" destination="BYZ-38-t0r" eventType="touchUpInside" id="e5M-se-JR5"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xK9-iu-4DD">
+                                <rect key="frame" x="234" y="682" width="80" height="80"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="xK9-iu-4DD" secondAttribute="height" multiplier="1:1" id="SyF-xp-dCZ"/>
+                                    <constraint firstAttribute="width" constant="80" id="WCN-PK-rXG"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Button">
+                                    <attributedString key="attributedTitle"/>
+                                    <imageReference key="image" image="arrowshape.turn.up.left.fill" catalog="system" symbolScale="large"/>
+                                </state>
+                                <buttonConfiguration key="configuration" style="plain" title="">
+                                    <imageReference key="image" image="star.circle.fill" catalog="system" symbolScale="large"/>
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="actionFire:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kNk-bV-clE"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xLV-Tj-d1s">
+                                <rect key="frame" x="324" y="682" width="80" height="80"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="4N9-hc-TjH"/>
+                                    <constraint firstAttribute="width" secondItem="xLV-Tj-d1s" secondAttribute="height" multiplier="1:1" id="o1f-5z-4DN"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Button">
+                                    <attributedString key="attributedTitle"/>
+                                    <imageReference key="image" image="arrowshape.turn.up.left.fill" catalog="system" symbolScale="large"/>
+                                </state>
+                                <buttonConfiguration key="configuration" style="plain" title="">
+                                    <imageReference key="image" image="arrowshape.turn.up.right.fill" catalog="system" symbolScale="large"/>
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="actionTurretRight:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PsE-Yd-wgB"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ze9-Rm-g3n">
+                                <rect key="frame" x="324" y="772" width="80" height="80"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="ze9-Rm-g3n" secondAttribute="height" multiplier="1:1" id="RLv-xO-jbq"/>
+                                    <constraint firstAttribute="width" constant="80" id="h69-IT-S1U"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Button">
+                                    <attributedString key="attributedTitle"/>
+                                    <imageReference key="image" image="arrowshape.turn.up.left.fill" catalog="system" symbolScale="large"/>
+                                </state>
+                                <buttonConfiguration key="configuration" style="plain" title="">
+                                    <imageReference key="image" image="chevron.right.circle.fill" catalog="system" symbolScale="large"/>
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="actionRight:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Sjb-wg-QhH"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tHa-1x-n7i">
+                                <rect key="frame" x="234" y="772" width="80" height="80"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="3xb-dQ-oTC"/>
+                                    <constraint firstAttribute="width" secondItem="tHa-1x-n7i" secondAttribute="height" multiplier="1:1" id="6M3-gh-379"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Button">
+                                    <attributedString key="attributedTitle"/>
+                                    <imageReference key="image" image="arrowshape.turn.up.left.fill" catalog="system" symbolScale="large"/>
+                                </state>
+                                <buttonConfiguration key="configuration" style="plain" title="">
+                                    <imageReference key="image" image="chevron.up.circle.fill" catalog="system" symbolScale="large"/>
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="actionForward:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eN7-qj-nxf"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="b6x-ap-YZz">
+                                <rect key="frame" x="144" y="772" width="80" height="80"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="7F0-FW-a5C"/>
+                                    <constraint firstAttribute="width" secondItem="b6x-ap-YZz" secondAttribute="height" multiplier="1:1" id="kMj-Xj-CV7"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Button">
+                                    <attributedString key="attributedTitle"/>
+                                    <imageReference key="image" image="arrowshape.turn.up.left.fill" catalog="system" symbolScale="large"/>
+                                </state>
+                                <buttonConfiguration key="configuration" style="plain" title="">
+                                    <imageReference key="image" image="chevron.left.circle.fill" catalog="system" symbolScale="large"/>
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="actionLeft:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LId-8r-ZGe"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Cs4-Ik-MBP"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Cs4-Ik-MBP" firstAttribute="bottom" secondItem="b6x-ap-YZz" secondAttribute="bottom" constant="10" id="0CW-YH-Q3H"/>
+                            <constraint firstItem="tHa-1x-n7i" firstAttribute="leading" secondItem="b6x-ap-YZz" secondAttribute="trailing" constant="10" id="0sb-zh-GYo"/>
+                            <constraint firstItem="Cs4-Ik-MBP" firstAttribute="bottom" secondItem="ze9-Rm-g3n" secondAttribute="bottom" constant="10" id="6sG-Eg-vUe"/>
+                            <constraint firstItem="zAc-LM-aiN" firstAttribute="top" secondItem="Cs4-Ik-MBP" secondAttribute="top" id="7rr-hu-9dp"/>
+                            <constraint firstItem="xLV-Tj-d1s" firstAttribute="leading" secondItem="xK9-iu-4DD" secondAttribute="trailing" constant="10" id="99m-5v-1SQ"/>
+                            <constraint firstItem="Cs4-Ik-MBP" firstAttribute="trailing" secondItem="xLV-Tj-d1s" secondAttribute="trailing" constant="10" id="AyY-ye-wtc"/>
+                            <constraint firstItem="zAc-LM-aiN" firstAttribute="leading" secondItem="Cs4-Ik-MBP" secondAttribute="leading" id="BJi-Nf-AoV"/>
+                            <constraint firstItem="Cs4-Ik-MBP" firstAttribute="bottom" secondItem="tHa-1x-n7i" secondAttribute="bottom" constant="10" id="H29-c9-ur8"/>
+                            <constraint firstItem="Cs4-Ik-MBP" firstAttribute="trailing" secondItem="zAc-LM-aiN" secondAttribute="trailing" id="IrL-UL-vbL"/>
+                            <constraint firstItem="Cs4-Ik-MBP" firstAttribute="bottom" secondItem="zAc-LM-aiN" secondAttribute="bottom" id="LLF-yB-oY7"/>
+                            <constraint firstItem="b6x-ap-YZz" firstAttribute="top" secondItem="3xE-49-hXF" secondAttribute="bottom" constant="10" id="X16-lw-3kJ"/>
+                            <constraint firstItem="tHa-1x-n7i" firstAttribute="top" secondItem="xK9-iu-4DD" secondAttribute="bottom" constant="10" id="k2W-J1-cnH"/>
+                            <constraint firstItem="ze9-Rm-g3n" firstAttribute="top" secondItem="xLV-Tj-d1s" secondAttribute="bottom" constant="10" id="kvQ-NP-AAT"/>
+                            <constraint firstItem="ze9-Rm-g3n" firstAttribute="leading" secondItem="tHa-1x-n7i" secondAttribute="trailing" constant="10" id="mYm-M0-DEB"/>
+                            <constraint firstItem="xK9-iu-4DD" firstAttribute="leading" secondItem="3xE-49-hXF" secondAttribute="trailing" constant="10" id="qrD-Wi-6t3"/>
+                            <constraint firstItem="Cs4-Ik-MBP" firstAttribute="trailing" secondItem="ze9-Rm-g3n" secondAttribute="trailing" constant="10" id="rFW-t8-jxN"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="arView" destination="zAc-LM-aiN" id="QFI-nc-eUL"/>
+                        <outlet property="fireButton" destination="xK9-iu-4DD" id="BSV-Op-I0C"/>
+                        <outlet property="forwardButton" destination="tHa-1x-n7i" id="ZAU-lF-tCf"/>
+                        <outlet property="leftButton" destination="b6x-ap-YZz" id="vgq-PY-Cb9"/>
+                        <outlet property="rightButton" destination="ze9-Rm-g3n" id="Ht8-ht-f1P"/>
+                        <outlet property="turretLeftButton" destination="3xE-49-hXF" id="uGr-6b-WJU"/>
+                        <outlet property="turretRightButton" destination="xLV-Tj-d1s" id="xjy-LF-ycU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.60714285714286" y="133.33333333333334"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="arrowshape.turn.up.left.fill" catalog="system" width="128" height="106"/>
+        <image name="arrowshape.turn.up.right.fill" catalog="system" width="128" height="106"/>
+        <image name="chevron.left.circle.fill" catalog="system" width="128" height="121"/>
+        <image name="chevron.right.circle.fill" catalog="system" width="128" height="121"/>
+        <image name="chevron.up.circle.fill" catalog="system" width="128" height="121"/>
+        <image name="star.circle.fill" catalog="system" width="128" height="121"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
